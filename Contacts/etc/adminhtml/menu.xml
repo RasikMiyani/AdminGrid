@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Rasik_Contacts::contacts_list" title="Contacts List" translate="title" module="Rasik_Contacts" sortOrder="20" resource="Rasik_Contacts::contacts_list"/>
+        <add id="Rasik_Contacts::all_contacts" title="All Contacts" translate="title" module="Rasik_Contacts" sortOrder="10" resource="Rasik_Contacts::all_contacts" parent="Rasik_Contacts::contacts_list" action="rasik_contacts/contacts/index"/>
+    </menu>
+</config>

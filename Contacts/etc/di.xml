@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="rasik_contacts_listing_data_source" xsi:type="string">Rasik\Contacts\Model\ResourceModel\Contacts\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Rasik\Contacts\Model\ResourceModel\Contacts\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">rasik_contacts</argument>
+            <argument name="eventPrefix" xsi:type="string">rasik_contacts_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">contacts_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Rasik\Contacts\Model\ResourceModel\Contacts</argument>
+        </arguments>
+    </type>
+</config>
